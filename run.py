@@ -5,7 +5,7 @@
 '''
 @Author: LEGEND
 @since: 2020-06-07 18:15:13
-@lastTime: 2020-06-08 00:27:53
+@lastTime: 2020-06-08 00:37:09
 @LastAuthor: Do not edit
 @FilePath: \iPytest\run.py
 @Description: 
@@ -19,5 +19,5 @@ sys.path.append(os.path.abspath(os.path.split(os.path.abspath(__file__))[0]))
 
 
 if __name__ == '__main__':
-    args = ['-vs', './testcase/sql4']
+    args = ['-v', '-s', './testcase/sql4/test_sqlwindow4.py']
     pytest.main(args)

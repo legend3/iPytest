@@ -1,8 +1,7 @@
-pytest==5.4.0
-allure-pytest==2.8.15
-allure-python-commons==2.8.15
+pytest==5.4.3
+allure-pytest==2.8.16
 pytest-rerunfailures==9.0
-allure-python-commons==2.8.15
+allure-python-commons==2.8.16
 configparser==5.0.0
 PyYAML==5.3.1
 requests==2.23.0
