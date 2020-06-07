@@ -4,8 +4,11 @@
 #  - history
 *.history
 
-# pytest- step_impl._pycache_
+# pytest - step_impl._pycache_
 _pycache_
+
+# pytest - .pytest_cache
+.pytest_cache
 
 # 无关的数据库信息
 # *[sql]*
