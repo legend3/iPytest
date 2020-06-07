@@ -19,5 +19,5 @@ sys.path.append(os.path.abspath(os.path.split(os.path.abspath(__file__))[0]))
 
 
 if __name__ == '__main__':
-    args = ['-vs','./testcase/sql4']
+    args = ['-vs', './testcase/sql4']
     pytest.main(args)

@@ -16,8 +16,8 @@ import os, sys
 sys.path.append(os.path.abspath(os.path.split(os.path.abspath(__file__))[0]))
 
 
-# @pytest.mark.dependency(depends=["testcase/sql3/test_sqlwindow3.py::test_login"])  # 设置测试用例执行顺序
+@pytest.mark.dependency(depends=["sql3/test_sqlwindow3.py::test_sql3"])  # 设置测试用例执行顺序
 # @pytest.mark.run(order=3)
 def test_sql4():
     a = 1
-    assert a !=0
+    assert a != 0

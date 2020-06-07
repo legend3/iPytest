@@ -13,6 +13,7 @@ import pytest
 @version: 
 '''
 
+
 @pytest.mark.dependency()   # 设置测试用例执行顺序
 def test_sql3():
-    assert 1==1
+    assert 1 == 1
