@@ -38,7 +38,7 @@ def test_a():
 
 @pytest.mark.dependency(name="b")
 def test_b():
-    pass
+    assert 2==2
 
 @pytest.mark.dependency(name="c", depends=["a"])
 def test_c():
