@@ -1,13 +1,13 @@
 # python compiled files
 *.pyc
 
-#  - history
+# history
 *.history
 
-# pytest - step_impl._pycache_
+# pytest - _pycache_
 *__pycache__
 
-# pytest - .pytest_cache
+# pytest_cache
 *.pytest_cache
 
 # 无关的数据库信息
