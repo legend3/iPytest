@@ -2,13 +2,13 @@
 *.pyc
 
 # history
-*.history
+.history
 
 # pytest - _pycache_
-*__pycache__
+__pycache__
 
 # pytest_cache
-*.pytest_cache
+.pytest_cache
 
 # 无关的数据库信息
 # *[sql]*
