@@ -20,10 +20,10 @@
             "module": "pytest",
             "args": [
                 "-sv",
-                "--disable-pytest-warnings",
-                "--html=report.html"
+                "--disable-pytest-warnings"
+                // "--html=report.html"
             ],
-            "cwd": "E:/Python36",
+            "cwd": "E:/Python38",
             "env": {},
             "envFile": "${workspaceRoot}/.env"
             // "debugOptions": [
