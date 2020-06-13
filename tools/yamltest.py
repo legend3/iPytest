@@ -4,7 +4,7 @@
 '''
 @Author: LEGEND
 @since: 2020-06-07 20:18:16
-@lastTime: 2020-06-13 15:05:04
+@lastTime: 2020-06-13 15:13:07
 @LastAuthor: Do not edit
 @FilePath: \iPytest\tools\yamltest.py
 @Description: 
@@ -21,19 +21,20 @@ def load_yaml():
 	with open("E:/workspace/iPytest/data/httpCommon.yaml", "r", encoding="utf-8") as docs:
 		try:
 			alldata = yaml.safe_load(docs)
+			print(alldata["ChuaTony"]["公司"])
 		except yaml.YAMLError as exc:
 			print(exc)
 	
-	#印出
-	for data in alldata:
-		print(alldata[data]['联络'])
+	# #印出
+	# for data in alldata:
+	# 	print(alldata[data]['联络'])
 	
-	#修改
-	alldata['Tom']['联络'][0]['公司']='963852741'
+	# #修改
+	# alldata['Tom']['联络'][0]['公司']='963852741'
 	
-	#写档
-	with open('E:/workspace/iPytest/data/httpCommon2.yaml', 'w+', encoding='utf8') as outfile:
-		yaml.dump(alldata, outfile, default_flow_style=False, allow_unicode=True)
+	# #写档
+	# with open('E:/workspace/iPytest/data/httpCommon2.yaml', 'w+', encoding='utf8') as outfile:
+	# 	yaml.dump(alldata, outfile, default_flow_style=False, allow_unicode=True)
 
 if __name__ == '__main__':
     load_yaml()
