@@ -4,7 +4,7 @@
 '''
 @Author: LEGEND
 @since: 2020-06-07 20:18:16
-@lastTime: 2020-06-13 14:57:40
+@lastTime: 2020-06-13 14:59:20
 @LastAuthor: Do not edit
 @FilePath: \iPytest\tools\yamltest.py
 @Description: 
@@ -18,7 +18,7 @@ from ruamel import yaml
 # @pytest.fixture()
 def load_yaml():
     #开档
-	with open("E:/workspace/iPytest/data/httpCommon", "r", encoding="utf-8") as docs:
+	with open("E:/workspace/iPytest/data/httpCommon.yaml", "r", encoding="utf-8") as docs:
 		try:
 			alldata = yaml.safe_load(docs)
 		except yaml.YAMLError as exc:
@@ -32,7 +32,7 @@ def load_yaml():
 	alldata['Tom']['联络'][0]['公司']='963852741'
 	
 	#写档
-	with open('E:/workspace/iPytest/data/httpCommon2', 'w+', encoding='utf8') as outfile:
+	with open('E:/workspace/iPytest/data/httpCommon2.yaml', 'w+', encoding='utf8') as outfile:
 		yaml.dump(alldata, outfile, default_flow_style=False, allow_unicode=True)
 
 if __name__ == '__main__':
